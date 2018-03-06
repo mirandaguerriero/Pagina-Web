@@ -1,0 +1,98 @@
+body {
+    background: $fondo;
+    font-family: arial;
+    color: $letras;  
+}
+
+header{
+    margin-bottom:6px;
+}
+
+a {
+    margin:6px;
+
+    font-size: 10px;
+    color: black;
+    text-decoration: none;
+}
+h1{
+    
+    margin:6px;
+
+    font-size: 50px;
+    color: $titulo1;
+
+
+
+
+}
+h2{
+    margin:6px;
+    font-size: 30px;
+    color: $titulo2;
+}
+
+h3{
+    margin:1px;
+    font-size: 15px;
+    color: $titulo2;
+
+}
+
+h6{
+    margin:6px;
+
+}
+
+p{
+    margin:6px;
+    font-size: 10px;
+    color: $titulo1;
+}
+
+
+.header {
+    text-align: center;
+
+    align-self:  center;
+    background-color: $divy;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 25px;
+    width: 100%;
+   flex-direction: row;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+
+   
+}
+.header:hover{
+    background-color: red;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: $divy;
+    color: white;
+    text-align: center;
+ }
+
+ .search-container {
+    float: right;
+    margin-right: 10px;
+    border-radius: 30%;
+  }
+

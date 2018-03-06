@@ -1,0 +1,131 @@
+.detalle {
+    
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-between;
+    margin: 15px;
+    //background-color: black;
+   
+    @include if-desktop() {
+justify-content: space-around;
+                 }
+    
+    @include if-mobile-landscape() {
+        flex-direction: row;
+        margin-left: 15px;
+        }
+
+   /* @include if-tablet-portrait() {
+        flex-direction: column;
+        width:710px;
+        }
+        */
+     
+
+    .letras{
+        order:2;
+
+      
+
+        @include if-mobile-landscape() {
+            flex-direction: column;
+            width: 30%;
+
+        }
+
+        
+
+      /*  @include if-tablet-portrait() {
+            flex-direction: row;
+            width: 900px;
+            padding: 20px;
+            orden:2;
+
+
+  }*/
+
+        
+       .ingredientes{
+          
+        margin: 5px;
+        font-size: 20px;
+        order: 1;
+
+         /*   @include if-tablet-portrait() {
+                margin-top: 30px;
+                width: 100%;
+                font-size: 25px;
+
+            } */
+
+            @include if-mobile-landscape() {
+                width: 660px;
+               
+
+            }
+
+            
+            
+
+         /*   @include if-tablet-portrait() {
+                width:700px;
+            }*/
+        }
+
+        .title{
+            font-size: 70px;
+ 
+          /*  @include if-tablet-portrait() {
+                font-size: 140px;
+   
+            } */
+ 
+            @include if-mobile-landscape() {
+            font-size: 129px;
+                    }
+            }
+            @include if-tablet-landscape() {
+                font-size: 29px;
+
+            justify-content: flex-start;
+                
+            } 
+ 
+        }
+ 
+
+    .te-img{
+        justify-content: center;
+        width: 100%;
+        order: 1;
+
+        @include if-desktop() {
+            width: 30%;
+
+        }
+    
+        @include if-mobile-landscape() {
+            justify-content: flex-end;
+            width: 100%;
+            order: 2;
+            margin-left: 60px;
+        
+            }     
+    }
+    
+   /* @include if-tablet-portrait() {
+       order:1;
+       width:600px;
+       justify-content: flex-start;
+
+    } */
+ 
+
+  
+}
+
+    
+
+

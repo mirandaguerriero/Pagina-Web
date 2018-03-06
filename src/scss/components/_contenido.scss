@@ -1,0 +1,130 @@
+.cabeza{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+
+  /*  @include if-mobile-landscape() {
+        flex-direction: row;
+        justify-content: flex-start;
+      
+        }*/
+     @include if-desktop() {
+     
+                }
+
+    @include if-mobile-landscape() {
+        
+        margin-top: 37px;
+        flex-direction: row;
+        justify-content: flex-start;
+          
+            }
+
+   
+    .welcome{
+        @include if-mobile-landscape() {
+            flex-direction: row;
+            margin-left: 15px;
+            width:60%;
+            margin-top:3px;
+            margin-right: 15px;
+
+            }
+    }
+
+    .frase{
+        display: flex;
+        justify-content:  center;
+        margin-top:40px;
+        margin-bottom:4px;
+        font-size: 120%;
+
+        @include if-mobile-landscape() {
+            justify-content:  flex-start;
+            margin-top:10px;
+            font-size: 200%;
+            flex-direction: row;
+            margin-left: 15px;
+            width:50%;
+            }
+        @include if-tablet-landscape() { 
+            font-size: 230%;
+          
+                }
+         @include if-desktop() {
+            font-size: 290%;
+
+             }
+    }
+}
+
+.container{
+    text-align: center;
+    @include if-tablet-portrait() {
+      /*  align-self:  center;
+
+        margin-left: 100px;
+        margin-right: 100px;
+
+        width: 400px;
+        font-size: 110%;
+        justify-content: space-between;
+*/
+text-align: center;
+
+
+    }
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+   
+    
+    .w3-quarter {
+        text-align: center;
+       
+        @include if-desktop() {
+        width: 20%
+
+             }
+
+
+        /*@include if-tablet-landscape() {
+            flex-direction: row;
+            width: 20%;  
+    
+                    }*/
+        
+
+        @include if-mobile-landscape() {
+            width: 30%;  
+        }
+
+        box-sizing: border-box;
+        width: 45%;
+        margin: 3px;
+        padding: 15px;
+        background-color: $divy;
+        border-radius: 15px;
+        justify-content: center;
+
+        .images{
+        justify-content: center;
+        }
+
+        .texto{
+        flex-direction: row;
+
+        @include if-mobile-landscape() {
+            font-size: 120%;
+
+           
+        }
+        }
+    }
+}
